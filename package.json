@@ -1,0 +1,52 @@
+{
+  "name": "tokens-net",
+  "version": "0.0.1",
+  "description": "TokensNet REST client",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "example": "node ./example/index.js",
+    "lint": "tslint src/**/*.ts",
+    "prebuild": "rm -rf lib",
+    "build": "tsc --noEmitOnError",
+    "watch": "tsc --watch",
+    "prepublish": "npm run build",
+    "pub": "np --no-cleanup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cernicc/tokens-net.git"
+  },
+  "keywords": [
+    "https://www.tokens.net/",
+    "exchange",
+    "cryptocurrency",
+    "client",
+    "dtr",
+    "bitcoin",
+    "ethereum",
+    "litecoin",
+    "orderbook",
+    "order",
+    "withdrawal",
+    "deposit"
+  ],
+  "author": "Rok Černič <rok.cernic@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cernicc/tokens-net/issues"
+  },
+  "homepage": "https://github.com/cernicc/tokens-net#readme",
+  "dependencies": {
+    "debug": "^3.1.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@types/debug": "0.0.30",
+    "@types/node": "^10.7.1",
+    "@types/request": "^2.47.1",
+    "np": "^3.0.4",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.1"
+  }
+}
