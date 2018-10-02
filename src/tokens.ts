@@ -13,8 +13,8 @@ enum HTTP_METHOD {
 
 interface ResponseObject {
   status: number;
-  headers: object;
-  body: object;
+  headers: any;
+  body: any;
 }
 
 class TokensNet {
